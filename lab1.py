@@ -1,15 +1,20 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
 #%%
-import random
 
 
-msg = "Hello World"
-print(msg)
 
-prize = 0
-for i in range(100):
-    roll = random.randint(1, 6)
-    if roll % 2 == 0:
-        prize += roll
-    else:
-        prize -= 1
-    print(prize)
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+
+x = np.linspace(0,1,300)
+
+for w in range(2,6,2):
+
+    plt.plot(x, np.sin(np.pi*x)*np.sin(2*w*np.pi*x))
+
+#%%
